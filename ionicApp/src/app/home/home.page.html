@@ -6,59 +6,305 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="ion-padding">
+<ion-content [fullscreen]="true" class="ion-padding" color="dark">
 
-  <h1>Título do meu App</h1>
-  <p>Conteudo do App</p>
 
-  <ion-button>
-    Padrão
-  </ion-button>
 
-  <ion-button href="http://google.com.br">
-    link
-  </ion-button> 
 
-  <h4>cores</h4>
-  <ion-button color="primary"> padrâo</ion-button>
-  <ion-button color="secondary"> secondary</ion-button>
-  <ion-button color="tertiary"> tertiary</ion-button>
-  <ion-button color="success">success</ion-button>
-  <ion-button color="warning">warning</ion-button>
-  <ion-button color="danger">danger</ion-button>
-  <ion-button color="light">light</ion-button>
-  <ion-button color="medium">medium</ion-button>
-  <ion-button color="dark">dark</ion-button>
 
-  <h4>Expandido</h4>
-  <ion-button expand="full">Full</ion-button>
-  <ion-button expand="block">block</ion-button>
+ 
+    <h1>Título do meu App</h1>
+    <p>Conteudo do App</p>
+  
+  
+    <!--BOTÕES-->
+    <ion-button>
+      Padrão
+    </ion-button>
+  
+    <ion-button href="http://google.com.br">
+      link
+    </ion-button> 
+  
+    <h4>cores</h4>
+    <ion-button color="primary"> padrâo</ion-button>
+    <ion-button color="secondary"> secondary</ion-button>
+    <ion-button color="tertiary"> tertiary</ion-button>
+    <ion-button color="success">success</ion-button>
+    <ion-button color="warning">warning</ion-button>
+    <ion-button color="danger">danger</ion-button>
+    <ion-button color="light">light</ion-button>
+    <ion-button color="medium">medium</ion-button>
+    <ion-button color="dark">dark</ion-button>
+  
+    <h4>Expandido</h4>
+    <ion-button expand="full">Full</ion-button>
+    <ion-button expand="block">block</ion-button>
+  
+    <h4>arredondado</h4>
+    <ion-button shape="round">arredondado</ion-button>
+  
+    <h4>preenchimento</h4>
+    <ion-button fill="outline">preenchimento</ion-button>
+  
+    <h4>icones</h4>
+    <ion-button>
+      <ion-icon slot="start" name="star"></ion-icon>
+      icone
+    </ion-button>
+    <br>
+    <ion-button>
+      <ion-icon slot="end" name="star"></ion-icon>
+      icone
+    </ion-button>
+    <br>
+    <ion-button>
+      <ion-icon slot="icon-only" name="star"></ion-icon>
+    </ion-button>
+  
+    <h4>tamanhos</h4>
+    <ion-button size="large">large</ion-button>
+    <ion-button size="">Padrão</ion-button>
+    <ion-button size="small">pequeno</ion-button>
+  
+    <!--CARTÕES-->
+  
+    <h4>Cartões</h4>
+  
+    <ion-card color="danger" mode="ios">
+      <ion-img src="https://picsum.photos/800/600"></ion-img>
+  
+      <ion-card-content>
+        <ion-card-title>
+          Lorem, ipsum dolor sit amet. 
+        </ion-card-title>
+  
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Quis reiciendis dolorum veritatis autem, nisi eius ut. 
+          Magnam, doloribus porro impedit explicabo necessitatibus reprehenderit suscipit inventore odio libero at,
+           cum minima?
+        </p>
+      </ion-card-content>
+    </ion-card>
+  
+    
+    <h4>Cartão com cabeçalho</h4>
+  
+    <ion-card >
+  
+      <ion-card-header>
+        <ion-card-title>
+          Lorem, ipsum dolor sit amet. 
+        </ion-card-title>
+        <ion-card-subtitle>
+          pharetra sit amet aliquam eu, lobortis quis.
+        </ion-card-subtitle>
+      </ion-card-header>
+  
+      <ion-img src="https://picsum.photos/800/600"></ion-img>
+  
+      <ion-card-content>
+  
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Quis reiciendis dolorum veritatis autem, nisi eius ut. 
+          Magnam, doloribus porro impedit explicabo necessitatibus reprehenderit suscipit inventore odio libero at,
+           cum minima?
+        </p>
+      </ion-card-content>
+    </ion-card>
+  
+    <h4>cartão com listagem de itens</h4>
+    <ion-card>
+      <ion-item href="http://google.com.br">
+        <ion-icon slot="start" name="add"></ion-icon>
+        <ion-label>1.Lorem ipsum dolor sit amet</ion-label>
+      </ion-item>
+  
+      <ion-item  href="http://google.com.br">
+        <ion-icon slot="start" name="star"></ion-icon>
+        <ion-label>2.Lorem ipsum dolor sit amet</ion-label>
+      </ion-item>
+    </ion-card>
+  
+    <!--listas-->
+    <h4>listas</h4>
+  
+    <ion-list>
+      <ion-item>
+        <ion-label>1 Lorem ipsum dolor sit amet</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>2 Lorem ipsum dolor sit amet</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>3 Lorem ipsum dolor sit amet</ion-label>
+      </ion-item>
+    </ion-list>
+  
+    <!--listas com avatar-->
+    <h4>listas com avatar</h4>
+  
+    <ion-list>
+      <ion-item>
+        <ion-avatar slot="start">
+          <ion-img src="https://picsum.photos/200/200"></ion-img>
+        </ion-avatar>
+        <ion-label>1 Lorem ipsum, dolor sit amet.</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-avatar slot="start">
+          <ion-img src="https://picsum.photos/200/200"></ion-img>
+        </ion-avatar>
+        <ion-label>2 Lorem ipsum, dolor sit amet.</ion-label>
+      </ion-item>
+    </ion-list>
+  
+    <!--listas com slide-->
+    <h4>listas com slide</h4>
+  
+    <ion-list>
+      <ion-item-sliding>
+  
+        <ion-item>
+          <ion-label>1 Lorem ipsum, dolor sit amet.</ion-label>
+        </ion-item>
+  
+        <ion-item-options side="end">
+          <ion-item-option color="success">
+            <ion-icon slot="start" name="create"></ion-icon>
+            alterar
+          </ion-item-option>
+          <ion-item-option  color="danger">
+            <ion-icon slot="start" name="trash"></ion-icon>
+            excluir
+          </ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-list>
+  
+    <!--entrada de dados-->
+  
+    <h4>Configurando entrada (floating, fixed e stacked)</h4>
+  
+    <ion-item>
+      <ion-label position="floating">
+        Seu nome:
+      </ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    
+    <ion-item color="dark">
+      <ion-label position="fixed">
+        Seu nome:
+      </ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  
+    <ion-item >
+      <ion-label position="stacked">
+        Seu nome:
+      </ion-label>
+      <ion-input></ion-input>
+    </ion-item>
 
-  <h4>arredondado</h4>
-  <ion-button shape="round">arredondado</ion-button>
+    <h4>Entrada de dados (value, placeholder, clearinput)</h4>
 
-  <h4>preenchimento</h4>
-  <ion-button fill="outline">preenchimento</ion-button>
+    <ion-item>
+      <ion-label>
+        seu nome?
+      </ion-label>
 
-  <h4>icones</h4>
-  <ion-button>
-    <ion-icon slot="start" name="star"></ion-icon>
-    icone
-  </ion-button>
-  <br>
-  <ion-button>
-    <ion-icon slot="end" name="star"></ion-icon>
-    icone
-  </ion-button>
-  <br>
-  <ion-button>
-    <ion-icon slot="icon-only" name="star"></ion-icon>
-  </ion-button>
+      <ion-input value="luan santos">
 
-  <h4>tamanhos</h4>
-  <ion-button size="large">large</ion-button>
-  <ion-button size="">Padrão</ion-button>
-  <ion-button size="small">pequeno</ion-button>
+      </ion-input>
+    </ion-item>
+
+    <ion-item color="dark">
+      <ion-label>
+        seu nome?
+      </ion-label>
+
+      <ion-input clearInput placeholder="digite seu nome"></ion-input>
+    </ion-item>
+
+    <h4>Tipos de entradas (text, number, password, email, tel url, search)</h4>
+
+    <ion-item>
+      <ion-label>número:</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+
+    <ion-item color="dark">
+      <ion-label>senha:</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>email</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+
+    <!--grid-->
+
+    <h4>Grid</h4>
+
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          conteudo 1
+        </ion-col>
+        <ion-col size="6">
+          conteudo 2
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <h4>Grid - OffSet</h4>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          conteudo 1
+        </ion-col>
+
+        <ion-col size="3" offset="3">
+          conteudo 2
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+    <h4>Grid - alinhando textos (ion-text-start, ion-text-end, ion-text-center)</h4>
+
+<ion-grid>
+  <ion-row class="ion-text-end">
+    <ion-col size="6">
+      1
+    </ion-col>
+    <ion-col size="6">
+      2
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+  <h4>Grid - alinhamento vertical</h4>
+
+  <ion-grid>
+    <ion-row class="ion-text-center ion-align-items-end">
+      <ion-col size="4">
+        1
+      </ion-col>
+      <ion-col size="4">
+        2
+      </ion-col>
+      <ion-col size="4">
+        3 <br>+<br>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
 </ion-content>
 
